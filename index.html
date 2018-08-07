@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Rolling Dice</title>
+ </head>
+ <style>
+ .numdiv{
+   height: 200px;
+   width: 200px;
+   border: solid 1px green;
+   float: left;
+ }  
+   </style>
+ <body>
+   <table>
+       <tr>
+       <td>
+   <div class="numdiv" id="number1">0</div>
+
+   <div class="numdiv" id="number2">0</div>
+       </td>
+       </tr>
+       <tr>
+       <td><button onclick="rollDice()">Generate Pair Total</button></td></tr>
+       <tr>
+       <td><span id="status">0</span></td></tr>
+   </table>
+   <div id="results"></div>
+   
+   <script src="index.js"></script>
+   </body>
+</html>
+
