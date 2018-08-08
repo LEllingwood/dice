@@ -32,7 +32,7 @@ function printList() {
     let pairList = document.createElement("p");
     
     for (let i = 2; i < count.length-1; i++) {
-    pairList.appendChild(document.createTextNode(i + ":" + (count[i]) +" "));
+    pairList.appendChild(document.createTextNode(i + ": " + (count[i]) +" "));
     ;
     pairList.appendChild(document.createElement("br"));
     }
@@ -40,3 +40,17 @@ function printList() {
 
 }
 printList()
+
+function barGraph() {
+    let destination = document.getElementById("bar_results")
+    for (let i = 0; i <= count.length; i++) {
+        let newBar = document.createElement("div");
+        newBar.style.width = count[i] + "px";
+        newBar.style.height = 20 + "px";
+        newBar.style.backgroundColor = "green";
+        destination.appendChild(document.createElement("br"));
+        
+        destination.appendChild(newBar);
+    }
+}
+barGraph()

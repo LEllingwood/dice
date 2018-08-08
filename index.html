@@ -4,12 +4,13 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
    <title>Rolling Dice</title>
+   <link rel="stylesheet" href="style.css">
  </head>
  <style>
  .numdiv{
-   height: 200px;
-   width: 200px;
-   border: solid 1px green;
+   height: 100px;
+   width: 100px;
+   border: solid 7px rgb(12, 27, 12);
    float: left;
  }  
    </style>
@@ -23,13 +24,17 @@
        </td>
        </tr>
        <tr>
-       <td><button onclick="rollDice()">Generate Pair Total</button></td></tr>
+       <td><button onclick="rollDice()">Click to Generate Pair Total</button></td></tr>
        <tr>
        <td><span id="status">0</span></td></tr>
    </table>
-   <div id="results"></div>
-   
-   <script src="index.js"></script>
-   </body>
+   <hr>
+   <div id="results">Roll Results</div>
+    <hr>
+
+   <div id="bar_results">Bar Graph Results</div>
+  
+  </body>
+  <script src="index.js"></script>
 </html>
 
